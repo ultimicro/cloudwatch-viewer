@@ -7,7 +7,7 @@ void main(string[] args) {
     // create main window
     var window = new Window();
 
-    window.title = "CloudWatch Viewer";
+    window.title = "Web view";
     window.fullscreen();
     window.destroy.connect(Gtk.main_quit);
 

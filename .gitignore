@@ -12,6 +12,6 @@
 /depcomp
 /install-sh
 /missing
-/src/cloudwatch-viewer
+/src/webview
 Makefile
 Makefile.in

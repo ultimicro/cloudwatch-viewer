@@ -1,4 +1,4 @@
-AC_INIT([cloudwatch-viewer], [0.1])
+AC_INIT([webview], [0.1])
 AM_INIT_AUTOMAKE([foreign nostdinc subdir-objects -Wall])
 
 AC_PROG_CC
