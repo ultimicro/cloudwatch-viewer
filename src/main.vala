@@ -1,7 +1,14 @@
 using Gtk;
 using WebKit;
 
-void main(string[] args) {
+int main(string[] args) {
+    // check argument
+    if (args.length != 2) {
+        stderr.printf("usage: %s URL\n", args[0]);
+        return 1;
+    }
+
+    // init library
     Gtk.init(ref args);
 
     // create main window
@@ -14,11 +21,13 @@ void main(string[] args) {
     // create webview
     var view = new WebView();
 
-    view.load_uri("https://www.google.com");
+    view.load_uri(args[1]);
 
     window.add(view);
 
     // run
     window.show_all();
     Gtk.main();
+
+    return 0;
 }
