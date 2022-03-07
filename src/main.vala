@@ -21,6 +21,7 @@ int main(string[] args) {
     // create webview
     var view = new WebView();
 
+    view.get_website_data_manager().set_tls_errors_policy(TLSErrorsPolicy.IGNORE);
     view.load_uri(args[1]);
 
     window.add(view);
